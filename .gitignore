@@ -1,0 +1,62 @@
+# ─── Environment files (NEVER commit these) ───────────────────
+.env
+.env.*
+.env.local
+.env.production
+.env.staging
+backend/.env
+backend/.env.*
+frontend/.env
+frontend/.env.*
+frontend/.env.local
+
+# Explicitly ALLOW the example templates (safe to commit)
+!.env.example
+!backend/.env.example
+!frontend/.env.example
+
+# ─── Node ─────────────────────────────────────────────────────
+node_modules/
+backend/node_modules/
+frontend/node_modules/
+npm-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# ─── Next.js ──────────────────────────────────────────────────
+frontend/.next/
+frontend/out/
+frontend/build/
+
+# ─── Logs ─────────────────────────────────────────────────────
+*.log
+backend/logs/
+logs/
+
+# ─── Docker volumes (local only) ──────────────────────────────
+data/
+mysql_data/
+
+# ─── OS files ─────────────────────────────────────────────────
+.DS_Store
+.DS_Store?
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# ─── Editor ───────────────────────────────────────────────────
+.vscode/settings.json
+.vscode/*.code-workspace
+.idea/
+*.swp
+*.swo
+
+# ─── Test & coverage ──────────────────────────────────────────
+coverage/
+.nyc_output/
+
+# ─── Misc ─────────────────────────────────────────────────────
+*.pem
+*.key
+*.cert
+backend/public/uploads/
