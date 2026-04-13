@@ -1,6 +1,9 @@
 {
   "name": "portfolio-frontend",
   "version": "1.0.0",
+  "engines": {
+    "node": ">=20"
+  },
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -14,8 +17,8 @@
     "framer-motion": "^11.2.11",
     "lucide-react": "^0.383.0",
     "next": "^16.2.2",
-    "react": "^19.2.4",
-    "react-dom": "^19.2.4",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
     "react-hook-form": "^7.52.1",
     "react-hot-toast": "^2.4.1",
     "tailwind-merge": "^2.3.0"
