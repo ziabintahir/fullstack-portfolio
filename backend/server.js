@@ -73,6 +73,10 @@ const authLimiter = rateLimit({
 // ──────────────────────────────────────────────
 // Routes
 // ──────────────────────────────────────────────
+
+app.get("/", (req, res) => {
+  res.send("🚀 Backend is running successfully!");
+});
 app.use("/api/v1/health", healthRoutes);
 app.use("/api/v1/auth", authLimiter, authRoutes);
 app.use("/api/v1/projects", projectRoutes);
