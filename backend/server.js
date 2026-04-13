@@ -99,7 +99,13 @@ app.use(errorHandler);
 // Start server
 // ──────────────────────────────────────────────
 const start = async () => {
-  await testConnection();
+  try {
+    await testConnection();
+    logger.info("✅ DB connected");
+  } catch (err) {
+    logger.error("❌ DB connection failed:", err.message);
+  }
+
   app.listen(PORT, () => {
     logger.info(`🚀 Server running on port ${PORT} in ${process.env.NODE_ENV || "development"} mode`);
     logger.info(`📖 Swagger docs: http://localhost:${PORT}/api/docs`);
